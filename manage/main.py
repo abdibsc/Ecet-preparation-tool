@@ -20,6 +20,7 @@ class MultiApp:
                 menu_icon="chat-text-fill",
                 default_index=0
             )
+            st.write("Note:Please click 2 times to take right action")
         if app=="Home":
             home.app()
         if app=="Electronics":
