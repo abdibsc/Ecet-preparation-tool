@@ -21,8 +21,8 @@ def app():
     "#FF8C00",  # Dark Orange
     "#B22222",  # Firebrick
     "#ADFF2F",  # Green Yellow
-    "#DA70D6"   # Orchid]
-    # Choose a random color for the side heading
+    "#DA70D6"   # Orchid
+    ]
     color = random.choice(colors)
     st.write(f"<h2 style='text-align: left;color: {color};font-size:15px;'>NOTE: Use Desktop Site in mobile for better experience.</h2>", unsafe_allow_html=True)
     st.write("""Welcome to your one-stop solution for preparing for the ECET exam! 
