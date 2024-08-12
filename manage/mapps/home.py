@@ -1,4 +1,5 @@
 import streamlit  as st
+import random
 def app():
     st.subheader("Let's start preparation with AI")
     colors = [
