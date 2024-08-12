@@ -29,7 +29,7 @@ def app():
         if py_data:
             st.session_state.messagee.append(py_data)
             st.text_area("Generated Text", value=st.session_state.messagee[-1], height=400)
-        ask = option_menu(menu_title="",options=["select","Ask for followUp"])
+        ask = option_menu(menu_title="",options=["select","Ask followUp"])
         if ask=="Ask followUp":
             cnt=1
             main(adata)
