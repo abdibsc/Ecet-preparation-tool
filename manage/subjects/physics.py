@@ -30,7 +30,7 @@ def app():
             st.session_state.messagee.append(py_data)
             st.text_area("Generated Text", value=st.session_state.messagee[-1], height=400)
         ask = option_menu(menu_title="",options=["select","Ask for followUp"])
-        if ask=="Ask for followUp":
+        if ask=="Ask followUp":
             cnt=1
             main(adata)
             UserFace.clear_data(cnt)
