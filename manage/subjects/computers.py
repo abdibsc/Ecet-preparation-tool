@@ -29,7 +29,7 @@ def app():
             st.session_state.cmsg.append(data2)
             st.text_area("Generated Text", value=st.session_state.cmsg[-1], height=400)
         ask = option_menu(menu_title="",options=["select","Ask for followUp"])
-        if ask=="Ask for followUp":
+        if ask=="Ask followUp":
             cnt2=1
             main(cdata)
             UserFace.clear_data(cnt2)
