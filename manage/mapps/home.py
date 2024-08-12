@@ -2,7 +2,7 @@ import streamlit  as st
 def app():
     st.subheader("Let's start preparation with AI")
     st.write("""
-            Note:Use Desktop site in mobiles 
+            Note: Use Desktop site in mobiles 
             for better experience.
             """)
     st.write("""Welcome to your one-stop solution for preparing for the ECET exam! 
