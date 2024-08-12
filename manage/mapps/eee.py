@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from subjects import chemistry, physics,maths
+from subjects import chemistry, physics,maths,eee_sub
 
 
 def app():
@@ -28,8 +28,7 @@ def app():
     elif st.session_state.eee == "Maths":
         maths.app()
     elif (st.session_state.eee== "Electrical"):
-        # Placeholder for Electronics app
-        st.write("Electrical app is under construction.")
+        eee_sub.app()
 
     # Add a reset button to clear the selection and show the menu again
     if st.session_state.eee is not None:
