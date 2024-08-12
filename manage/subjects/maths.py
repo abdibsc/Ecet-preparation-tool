@@ -28,7 +28,7 @@ def app():
         if data1:
             st.session_state.maths.append(data1)
             st.text_area("Generated Text", value=st.session_state.maths[-1], height=400)
-        ask1 = option_menu(menu_title="",options=["select","Ask for followUp"])
+        ask1 = option_menu(menu_title="",options=["select","Ask followUp"])
         if ask1=="Ask followUp":
             cnt1=1
             main(mdata)
