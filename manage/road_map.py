@@ -22,7 +22,7 @@ def rmap():
         df['Dates'] = new_dates
         st.write(df)
         st.subheader("Total Estimated Study Time")
-        st.write(f"For Sem 1 Chapters: 18 days ({today+timedelta(days=18)})")
+        st.write(f"For Sem 1 Chapters: 18 days ({date+timedelta(days=18)})")
         st.write(f"For Sem 2 Chapters: 14 days ({new_dates[-1]})")
         st.write("Revision: Allocate at least 3-5 days for revision after completing the chapters.")
         st.write("Practice: Include time for solving previous exam papers and practice questions, which could take another 4-5 days.")
@@ -42,7 +42,7 @@ def rmap():
         df1['Dates'] = new_dates1
         st.write(df1)
         st.subheader("Total Estimated Study Time")
-        st.write(f"For Sem 1 Chapters: 16 days ({today + timedelta(days=16)})")
+        st.write(f"For Sem 1 Chapters: 16 days ({date1 + timedelta(days=16)})")
         st.write(f"For Sem 2 Chapters: 18 days ({new_dates1[-1]})")
         st.write("Revision: Allocate at least 3-5 days for revision after completing the chapters.")
         st.write("Practice: Include time for solving previous exam papers and practice questions, which could take another 4-5 days.")
