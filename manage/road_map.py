@@ -10,6 +10,7 @@ def rmap():
 
     subject=st.selectbox(options=["Select","Chemistry","Physics","Maths"],label="")
     if subject=="Chemistry":
+        st.subheader("Chemistry")
         date = st.date_input('select starting date', value=today)
         new_dates=[]
         ndate=date
@@ -29,6 +30,7 @@ def rmap():
         st.write("Total Preparation Time: 40-43 days")
         st.write(f"Final dates: {today+timedelta(days=40)}    To    {today+timedelta(days=43)} ")
     if subject=="Physics":
+        st.subheader("Physics")
         date1 = st.date_input('select starting date', value=today)
         new_dates1 = []
         ndate1 = date1
