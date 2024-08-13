@@ -28,7 +28,7 @@ def rmap():
         st.write("Practice: Include time for solving previous exam papers and practice questions, which could take another 4-5 days.")
         st.subheader("Final Estimate")
         st.write("Total Preparation Time: 40-43 days")
-        st.write(f"Final dates: {today+timedelta(days=40)}    To    {today+timedelta(days=43)} ")
+        st.write(f"Final dates: {date+timedelta(days=40)}    To    {date+timedelta(days=43)} ")
     if subject=="Physics":
         st.subheader("Physics")
         date1 = st.date_input('select starting date', value=today)
@@ -48,7 +48,7 @@ def rmap():
         st.write("Practice: Include time for solving previous exam papers and practice questions, which could take another 4-5 days.")
         st.subheader("Final Estimate")
         st.write("Total Preparation Time: 44-59 days")
-        st.write(f"Final dates: {today + timedelta(days=44)}    To    {today + timedelta(days=59)} ")
+        st.write(f"Final dates: {date1 + timedelta(days=44)}    To    {date1 + timedelta(days=59)} ")
 
     if subject=="Maths":
         st.subheader("Maths road Map is under Construction")
