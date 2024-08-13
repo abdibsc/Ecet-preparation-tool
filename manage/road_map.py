@@ -51,7 +51,7 @@ def rmap():
         st.write(f"Final dates: {today + timedelta(days=44)}    To    {today + timedelta(days=59)} ")
 
     if subject=="Maths":
-        st.write("Maths road Map is under Construction")
+        st.subheader("Maths road Map is under Construction")
     if subject=="Select":
         st.subheader("Select the subject to find best Road Map..")
 
