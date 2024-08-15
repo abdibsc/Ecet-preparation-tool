@@ -48,6 +48,9 @@ def app():
         if selected_star!="select":
             if name !="" and branch!="":
                append_feedback(f'["{name}" ,"From {branch} Rated this app {selected_star} stars!"]')
+               st.write(
+                    f"<h2 style='text-align: center;color: yellow;font-size:17px;'>Thank you for your Feedback..!</h2>",
+                    unsafe_allow_html=True)
 
 
 
