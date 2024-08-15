@@ -4,7 +4,7 @@ import ast
 def app():
     st.subheader("Rate Us..!")
     name=st.text_input("Enter your Name:")
-    branch=st.text_input("Enter your Branch:",value="ECE")
+    branch=st.text_input("Enter your Stream:",value="ECE")
     stars = ["select",'⭐️',"⭐️⭐️","⭐️⭐️⭐️","⭐️⭐️⭐️⭐️","⭐️⭐️⭐️⭐️⭐️"]
     selected_star = st.selectbox('Rate this app:', options=stars)
     btn=st.button("Submit")
