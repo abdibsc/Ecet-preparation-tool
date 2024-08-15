@@ -58,7 +58,7 @@ def app():
     with open(FEEDBACK_FILE, 'r',encoding="utf-8") as file:
         feedbacks = file.readlines()
         for feedback in feedbacks:
-            feed_list=feedback               #ast.literal_eval(feedback)
+            feed_list=ast.literal_eval(feedback)
             st.markdown(f"""
     <div class="feedback-box">
         <div class="feedback-title">{feed_list[0]}</div>
