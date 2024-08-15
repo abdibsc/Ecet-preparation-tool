@@ -53,14 +53,14 @@ def app():
 
     st.header("User Feedbacks")
 
-    if os.path.exists(FEEDBACK_FILE):
-        with open(FEEDBACK_FILE, 'r',encoding="utf-8") as file:
-            feedbacks = file.readlines()
-            for feedback in feedbacks:
-                feed_list=eval(feedback)
-                st.markdown(f"""
-        <div class="feedback-box">
-            <div class="feedback-title">{feed_list[0]}</div>
-            <div class="feedback-content">{feed_list[1]}</div>
-        </div>
-        """, unsafe_allow_html=True)
+    
+    with open(FEEDBACK_FILE, 'r',encoding="utf-8") as file:
+        feedbacks = file.readlines()
+        for feedback in feedbacks:
+            feed_list=eval(feedback)
+            st.markdown(f"""
+    <div class="feedback-box">
+        <div class="feedback-title">{feed_list[0]}</div>
+        <div class="feedback-content">{feed_list[1]}</div>
+    </div>
+    """, unsafe_allow_html=True)
