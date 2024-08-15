@@ -31,7 +31,7 @@ def app():
                 </style>
                 """
     st.markdown(feedback_style, unsafe_allow_html=True)
-    FEEDBACK_FILE="ratings.txt"
+    FEEDBACK_FILE="my_ratings.txt"
     def append_feedback(feedback):
         # Check if the file exists
         if os.path.exists(FEEDBACK_FILE):
