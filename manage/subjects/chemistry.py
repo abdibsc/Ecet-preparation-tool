@@ -17,7 +17,7 @@ def app():
     if "message" not in st.session_state:
         st.session_state.message = []
     if st.session_state.content is not None:
-        prompt=f"""you are a chemistry assistant of ecet preparation aspirant,give detailed information and give possible examples on the specified topic.
+        prompt=f"""you are a chemistry assistant of ecet preparation aspirant,give detailed information and give possible examples on the specified topic.give only useful information avoid giving much matter.
         The topic is: "{st.session_state.content}"
         use your entire knowlade on ecet, and give only ecet related only.
         if the topic is not relateted to chemistry or subject  then specify to user that,"sorry it is not related to any chapter in chemistry,enter correct one."
