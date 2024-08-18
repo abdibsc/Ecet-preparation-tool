@@ -13,7 +13,7 @@ class UserFace:
             st.session_state.recent_conversations = []
     def clear_data(num):
         st.session_state.messages.clear()
-        st.session_state.recent_conversations.clear()
+        #st.session_state.recent_conversations.clear()
     def display_chat(self):
         for message in st.session_state.messages:
             role = message.get("role")
