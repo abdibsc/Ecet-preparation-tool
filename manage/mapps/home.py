@@ -29,6 +29,14 @@ def app():
     st.write("""Welcome to your one-stop solution for preparing for the ECET exam! 
     Our platform is designed to help you excel in your chosen branch by providing easy access to subjects,
     study material, and an interactive AI-powered chatbot to assist with your queries.""")
+    st.subheader("What is in this App.?")
+    st.write(f"<h3 style='text-align: left;color:white;font-size:20px;'>Preparation Road Map.</h3>", unsafe_allow_html=True)
+    st.write(f"<h4 style='text-align: left;color:white;font-size:20px;'>Q&A with choosen Subject.</h4>", unsafe_allow_html=True)
+    st.write(f"<h5 style='text-align: left;color:white;font-size:20px;'>AI Chat for Doubt clarification.</h5>", unsafe_allow_html=True)
+    st.write(f"<h6 style='text-align: left;color:white;font-size:20px;'>previous Question papers.</h6>", unsafe_allow_html=True)
+    st.write(f"<h7 style='text-align: left;color:white;font-size:20px;'>Best learning Path way..</h7>", unsafe_allow_html=True)
+    st.write(f"<h8 style='text-align: left;color:white;font-size:20px;'>Rate us your experience!</h8>", unsafe_allow_html=True)
+    
     st.subheader("Choose Your Branch")
     st.write("""Get started by selecting your branch. Whether you're in ECE, CIVIL, MECH, CSE, or EEE, our tool allows you to explore the subjects relevant to your field. Simply click on your branch to view the subjects and begin your preparation.""")
     st.subheader("Ask Questions and Chat with AI")
