@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from subjects import chemistry, physics,maths,electronics_sub
+from subjects import chemistry, physics,maths,electronics_sub,new_cem
 from mapps import papers
 
 def app():
@@ -23,7 +23,8 @@ def app():
 
     # Based on the selected subject, display the corresponding app
     if st.session_state.selected_subject == "Chemistry":
-        chemistry.app()
+        new_cem.app()
+        #chemistry.app()
     elif st.session_state.selected_subject == "Physics":
         physics.app()
     elif st.session_state.selected_subject == "Maths":
