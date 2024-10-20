@@ -29,6 +29,10 @@ def app():
     st.write("""Welcome to your one-stop solution for preparing for the ECET exam! 
     Our platform is designed to help you excel in your chosen branch by providing easy access to subjects,
     study material, and an interactive AI-powered chatbot to assist with your queries.""")
+    st.subheader("Chat With AI")
+    st.write("Previous ECET questions Finder..")
+    st.write("At your finger tips")
+    st.link_button("Ecet qus Finder", "https://www.stack-ai.com/chat-assistant/bd4861f8-a9f9-4e41-aa4c-60c433d942c1/9139a0ba-3f45-416f-9ece-805c64ff2c80/6709520d7ad920be253c10ce")
     st.subheader("What is in this App.?")
     st.write(f"<h3 style='text-align: left;color:white;font-size:20px;'>Preparation Road Map.</h3>", unsafe_allow_html=True)
     st.write(f"<h4 style='text-align: left;color:white;font-size:20px;'>Q&A with choosen Subject.</h4>", unsafe_allow_html=True)
